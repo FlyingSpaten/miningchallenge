@@ -1,0 +1,59 @@
+{
+	"editor": {
+		"allAngles": true,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+		"side": [16,16],
+		"top": [16,16]
+	},
+	"textures": {
+		"side": "E:/Developement/vintagestory/mod-workspace/mods/miningchallenge/assets/miningchallenge/shapes/block/side",
+		"top": "E:/Developement/vintagestory/mod-workspace/mods/miningchallenge/assets/miningchallenge/shapes/block/top"
+	},
+	"elements": [
+		{
+			"name": "Reinforce_side2_upper",
+			"from": [ 11.0, 14.0, 0.0 ], 
+			"to": [ 15.0, 16.0, 16.0 ], 
+			"rotationOrigin": [ 11.0, 14.0, 0.0 ],
+			"faces": {
+				"north": { "texture": "#top", "uv": [ 6.0, 6.0, 10.0, 8.0 ] },
+				"east": { "texture": "#side", "uv": [ 0.0, 0.0, 2.0, 16.0 ], "rotation": 90 },
+				"south": { "texture": "#top", "uv": [ 6.0, 6.0, 10.0, 8.0 ] },
+				"west": { "texture": "#side", "uv": [ 0.0, 0.0, 2.0, 16.0 ], "rotation": 90 },
+				"up": { "texture": "#side", "uv": [ 6.0, 0.0, 10.0, 16.0 ] },
+				"down": { "texture": "#side", "uv": [ 6.0, 0.0, 10.0, 16.0 ] }
+			}
+		},
+		{
+			"name": "Reinforce_side2_middle",
+			"from": [ 6.0, 14.0, 0.0 ], 
+			"to": [ 10.0, 16.0, 16.0 ], 
+			"rotationOrigin": [ 6.0, 14.0, 0.0 ],
+			"faces": {
+				"north": { "texture": "#top", "uv": [ 6.0, 6.0, 10.0, 8.0 ] },
+				"east": { "texture": "#side", "uv": [ 0.0, 0.0, 2.0, 16.0 ], "rotation": 90 },
+				"south": { "texture": "#top", "uv": [ 6.0, 6.0, 10.0, 8.0 ] },
+				"west": { "texture": "#side", "uv": [ 0.0, 0.0, 2.0, 16.0 ], "rotation": 90 },
+				"up": { "texture": "#side", "uv": [ 6.0, 0.0, 10.0, 16.0 ] },
+				"down": { "texture": "#side", "uv": [ 6.0, 0.0, 10.0, 16.0 ] }
+			}
+		},
+		{
+			"name": "Reinforce_side2_lower",
+			"from": [ 1.0, 14.0, 0.0 ], 
+			"to": [ 5.0, 16.0, 16.0 ], 
+			"rotationOrigin": [ 1.0, 14.0, 0.0 ],
+			"faces": {
+				"north": { "texture": "#top", "uv": [ 6.0, 6.0, 10.0, 8.0 ] },
+				"east": { "texture": "#side", "uv": [ 0.0, 0.0, 2.0, 16.0 ], "rotation": 90 },
+				"south": { "texture": "#top", "uv": [ 6.0, 6.0, 10.0, 8.0 ] },
+				"west": { "texture": "#side", "uv": [ 0.0, 0.0, 2.0, 16.0 ], "rotation": 90 },
+				"up": { "texture": "#side", "uv": [ 6.0, 0.0, 10.0, 16.0 ] },
+				"down": { "texture": "#side", "uv": [ 6.0, 0.0, 10.0, 16.0 ] }
+			}
+		}
+	]}

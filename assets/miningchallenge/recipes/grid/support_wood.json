@@ -1,0 +1,10 @@
+﻿{
+	"ingredientPattern": "LA,L_",
+	"ingredients": {
+		"A": { "type": "item", "code": "game:axe-*", "isTool": true  },
+		"L": { "type": "block", "code": "game:log-placed-*-ud", "name": "wood", "allowedVariants": ["birch", "oak", "maple", "pine", "acacia", "kapok", "aged", "baldcypress", "larch", "redwood", "walnut"] }
+	},
+	"width": 2,
+	"height": 2,
+	"output": { "type": "block", "code": "miningchallenge:support-{wood}", "quantity": 4  }
+}

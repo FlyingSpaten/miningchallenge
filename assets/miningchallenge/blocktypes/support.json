@@ -1,0 +1,58 @@
+﻿{
+    "code": "support",
+    "class": "BlockSupport",
+    "entityClass": "BlockEntitySupportWood",
+    "variantgroups": [
+        {
+            "code": "wood",
+            "states": [ "aged" ],
+            "loadFromProperties": "game:block/wood"
+        }
+    ],
+    "creativeinventory": {
+        "general": [ "support-*" ]
+    },
+    "shape": {
+        "base": "block/support-wood/v/0/x"
+    },
+    "blockmaterial": "Wood",
+    "lightAbsorption": 0,
+    "sidesolid": {"all": false},
+    "sideopaque": {"all": false},
+    "sideAO": {"all": false},
+    "requiredMiningTier": 1,
+    "textures": {
+        "top": {"base": "game:block/wood/treetrunk/{wood}" },
+        "side": {"base": "game:block/wood/debarked/{wood}", "rotation": 90}
+    },
+    "replaceable": 500,
+    "resistance": 4.5,
+    "sounds": {
+        "place": "game:block/planks",
+        "walk": "game:walk/wood",
+        "hit": "game:block/planks",
+        "break": "game:block/planks",
+        "byTool": {
+            "Axe": {
+                "hit": "game:block/chop",
+                "break": "game:block/planks"
+            }
+        }
+    },
+    "drops": [
+        {
+            "type": "block",
+            "code": "support-{wood}",
+            "quantity": { "avg": 1 }
+        }
+    ],
+    "maxStackSize": 16,
+    "materialDensity": 700,
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": {"x": -1.2, "y": -1.1, "z": -0.8},
+        "rotation": {"x": -2, "y": 25, "z": -78},
+        "scale": 0.37
+    }
+}

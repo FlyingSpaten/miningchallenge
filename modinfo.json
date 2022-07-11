@@ -1,0 +1,12 @@
+{
+  "type": "code",
+  "modid": "miningchallenge",
+  "name": "Mining challenge mod",
+  "author": "FlyingSpaten",
+  "description": "Aims to make mining more realistic as well as more challenging",
+  "version": "1.0.0",
+    "dependency": {
+        "game": "",
+        "survival": ""
+    }
+}

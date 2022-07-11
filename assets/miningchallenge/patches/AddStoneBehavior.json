@@ -1,0 +1,14 @@
+﻿[
+    {
+        "file": "game:blocktypes/stone/rock",
+        "op": "add",
+        "path": "/behaviors/1",
+        "value": { "name": "BlockBehaviorSupportable" }
+    },
+    {
+        "file": "game:itemtypes/resource/stone",
+        "op": "add",
+        "path": "/behaviors",
+        "value": [{"name": "BehaviorStoneReinforcable"}]
+    }
+]

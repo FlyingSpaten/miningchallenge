@@ -1,0 +1,68 @@
+﻿{
+    "code": "reinforcement-stone",
+    "class": "BlockReinforcementStone",
+    "entityClass": "BlockEntityReinforcementStone",
+    "variantgroups": [
+        {
+            "code": "wood",
+            "states": [ "aged" ],
+            "loadFromProperties": "game:block/wood"
+        },
+        { 
+            "code": "rock", 
+            "loadFromProperties": "game:block/rockwithdeposit" 
+        }
+    ],
+    "creativeinventory": {
+        "general": [ "reinforcement-stone-*-*" ]
+    },
+    "shape": {
+      "base": "block/reinforcement-stone/reinforcement-v-n"
+    },
+    "blockmaterial": "Wood",
+    "lightAbsorption": 0,
+    "sidesolid": {"all": false},
+    "sideopaque": {"all": false},
+    "sideAO": {"all": false},
+    "requiredMiningTier": 1,
+    "textures": {
+        "top": {"base": "game:block/wood/treetrunk/{wood}" },
+        "side": {"base": "game:block/wood/debarked/{wood}", "rotation": 90},
+        "stone": {"base": "game:block/stone/cobblestone/{rock}*"}
+    },
+    "replaceable": 500,
+    "resistance": 4.5,
+    "sounds": {
+        "place": "block/planks",
+        "walk": "walk/wood",
+        "hit": "block/planks",
+        "break": "block/planks",
+        "byTool": {
+            "Axe": {
+                "hit": "block/chop",
+                "break": "block/planks"
+            }
+        }
+    },
+    "drops": [
+        {
+            "type": "item",
+            "code": "game:plank-{wood}",
+            "quantity": { "avg": 1 }
+        },
+        {
+            "type": "item",
+            "code": "game:stone-{rock}",
+            "quantity": { "avg": 1 }
+        }
+    ],
+    "maxStackSize": 16,
+    "materialDensity": 700,
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": {"x": -1.2, "y": -1.1, "z": -0.8},
+        "rotation": {"x": -2, "y": 25, "z": -78},
+        "scale": 0.37
+    }
+}

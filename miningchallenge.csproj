@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBA744BB-1E3D-4279-9AA5-D1B7C75AD6BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>miningchallenge</RootNamespace>
+    <AssemblyName>miningchallenge</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\miningchallenge\</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Debug\miningchallenge\</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\miningchallenge\</OutputPath>
+    <IntermediateOutputPath>..\..\obj\Release\miningchallenge\</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(AppData)\Vintagestory\VintagestoryAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSSurvivalMod">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSSurvivalMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSEssentials">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSEssentials.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VSCreativeMod">
+      <HintPath>$(AppData)\Vintagestory\Mods\VSCreativeMod.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(AppData)\Vintagestory\Lib\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\miningchallenge\blocktypes\support_reinforced_stone.txt" />
+    <Content Include="assets\miningchallenge\textures\acacia_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\acacia_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\aged_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\aged_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\baldcypress_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\baldcypress_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\birch_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\birch_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\ebony_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\ebony_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\kapok_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\kapok_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\larch_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\larch_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\maple_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\maple_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\oak_debarked_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\oak_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\pine_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\pine_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\purpleheart_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\purpleheart_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\redwood_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\redwood_treetrunk.png" />
+    <Content Include="assets\miningchallenge\textures\walnut_debarked.png" />
+    <Content Include="assets\miningchallenge\textures\walnut_treetrunk.png" />
+    <Content Include="modinfo.json" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="src\BlockBehavior\BehaviorStoneReinforcable.cs" />
+    <Compile Include="src\BlockBehavior\BlockBehaviorPreassureBreaking.cs" />
+    <Compile Include="src\BlockBehavior\BlockBehaviorSupportable.cs" />
+    <Compile Include="src\BlockEntity\BaseBlockEntityReinforcement.cs" />
+    <Compile Include="src\BlockEntity\BaseBlockEntitySupport.cs" />
+    <Compile Include="src\BlockEntity\BlockEntityReinforcementStone.cs" />
+    <Compile Include="src\BlockEntity\BlockEntityReinforcementWood.cs" />
+    <Compile Include="src\BlockEntity\BlockEntitySupportWoodReinforcedStone.cs" />
+    <Compile Include="src\BlockEntity\BlockEntitySupportWoodReinforcedWood.cs" />
+    <Compile Include="src\BlockEntity\BlockEntitySupportWood.cs" />
+    <Compile Include="src\Block\BaseBlockReinforcement.cs" />
+    <Compile Include="src\Block\BaseBlockSupport.cs" />
+    <Compile Include="src\Block\BlockReinforcement.cs" />
+    <Compile Include="src\Block\BlockReinforcementStone.cs" />
+    <Compile Include="src\Block\BlockReinforcementWood.cs" />
+    <Compile Include="src\Block\BlockSupport.cs" />
+    <Compile Include="src\Block\BlockSupportWoodReinforcedStone.cs" />
+    <Compile Include="src\Block\BlockSupportWoodReinforcedWood.cs" />
+    <Compile Include="src\MiningChallengeMod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\miningchallenge\blocktypes\reinforcement_stone.json" />
+    <None Include="assets\miningchallenge\blocktypes\reinforcement_wood.json" />
+    <None Include="assets\miningchallenge\blocktypes\support_wood_reinforced_stone.json" />
+    <None Include="assets\miningchallenge\blocktypes\support_wood_reinforced_wood.json" />
+    <None Include="assets\miningchallenge\blocktypes\support.json" />
+    <None Include="assets\miningchallenge\patches\AddStoneBehavior.json" />
+    <None Include="assets\miningchallenge\recipes\grid\support_wood.json" />
+    <None Include="assets\miningchallenge\shapes\block\support_wood.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
