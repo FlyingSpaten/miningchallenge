@@ -5,7 +5,7 @@ namespace nrw.frese.miningchallenge.block
 {
     internal class BlockReinforcementWood : BaseBlockReinforcement
     {
-        public override double BaseTemporalSupport { get { return 0.005; } }
+        public override double BaseTemporalSupport { get { return 0.02; } }
 
         public override string GetCreateReinforcementItemCode(Block currentBlock)
         {

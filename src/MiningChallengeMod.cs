@@ -72,6 +72,10 @@ namespace nrw.frese.miningchallenge
                             {
                                 sum += ((BaseBlockSupport) block).BaseTemporalSupport;
                             }
+                            else if (block is BaseBlockReinforcement)
+                            {
+                                sum += ((BaseBlockReinforcement)block).BaseTemporalSupport;
+                            }
                         }
                     }
                 }

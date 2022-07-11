@@ -5,7 +5,7 @@ namespace nrw.frese.miningchallenge.block
 {
     internal class BlockSupport : BaseBlockSupport
     {
-        public override double BaseTemporalSupport { get { return 0.0025; } }
+        public override double BaseTemporalSupport { get { return 0.01; } }
 
         public override string UpgradeItemCode { get { return "plank-[^-]*"; } }
 

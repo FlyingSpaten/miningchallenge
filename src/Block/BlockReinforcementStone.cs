@@ -4,7 +4,7 @@ namespace nrw.frese.miningchallenge.block
 {
     internal class BlockReinforcementStone : BaseBlockReinforcement
     {
-        public override double BaseTemporalSupport { get { return 0.01; } }
+        public override double BaseTemporalSupport { get { return 0.04; } }
 
         public override string GetCreateReinforcementItemCode(Block currentBlock)
         {
